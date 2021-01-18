@@ -39,6 +39,7 @@
     ```bash
         func init MyAzureFunctionProj -n --worker-runtime dotnet
     ```
+![20487D_Images](https://github.com/ialcaidef/Developing--Testing--and-Publishing-an-Azure-Function-from-CLI/blob/master/Images/01.png)
 
 13. To change the directory to the new Functions project folder, paste the following command, and then press Enter:
 
@@ -51,12 +52,17 @@
     ```bash
         func new --language C# --template "HttpTrigger" --name MyAzureFunc
     ```
+    
+    ![20487D_Images](https://github.com/ialcaidef/Developing--Testing--and-Publishing-an-Azure-Function-from-CLI/blob/master/Images/03.png)
 
 15. To test the new Azure function locally, paste the following command, and then press Enter:
 
     ```bash
         func host start --build
     ```
+
+![20487D_Images](https://github.com/ialcaidef/Developing--Testing--and-Publishing-an-Azure-Function-from-CLI/blob/master/Images/04.png)
+
 
     > **Note**: If windows Security Alert dialog box appears click **Allow access**.
 
@@ -69,6 +75,8 @@
     ```
 
     >**Note**: Replace *<yourname>* variable with your actual name.
+   
+   ![20487D_Images](https://github.com/ialcaidef/Developing--Testing--and-Publishing-an-Azure-Function-from-CLI/blob/master/Images/05.png)
 
 18. Check that you are getting the expected response such as the following:
 
@@ -77,6 +85,8 @@
     ```
 
       >**Note**: This is the response from Microsoft Edge. Other browsers may include displayed XML.       
+      
+      ![20487D_Images](https://github.com/ialcaidef/Developing--Testing--and-Publishing-an-Azure-Function-from-CLI/blob/master/Images/06.png)
 
 19. To sign in to Azure with your credentials before publishing the new Azure function to Azure, paste the following command, and then press Enter:
 
@@ -91,6 +101,8 @@
     ```bash
         func azure functionapp publish {Your App name}
     ```
+    
+    ![20487D_Images](https://github.com/ialcaidef/Developing--Testing--and-Publishing-an-Azure-Function-from-CLI/blob/master/Images/11.png)
 
     >**Note**: Replace *{Your App name}* with your actual app name that you noted in step 6.
 
@@ -108,5 +120,5 @@
 
       >**Note**: This is the response from Microsoft Edge. Other browsers may include displayed XML.  
 
-
+![20487D_Images](https://github.com/ialcaidef/Developing--Testing--and-Publishing-an-Azure-Function-from-CLI/blob/master/Images/12.png)
 ​     
